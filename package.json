@@ -1,0 +1,26 @@
+{
+  "name": "sahaaya-emergency-platform",
+  "version": "1.0.0",
+  "description": "Sahaaya — Digital Community Emergency Coordination Platform bridging citizens in distress, NSS volunteers, and authorized emergency services.",
+  "scripts": {
+    "start": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,green\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"blue,green\" \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && node src/server.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "emergency-coordination",
+    "nss-volunteers",
+    "disaster-management",
+    "sos",
+    "ndrf",
+    "leaflet",
+    "realtime"
+  ],
+  "author": "Sahaaya Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
