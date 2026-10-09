@@ -36,9 +36,11 @@ export function SocketProvider({ children }) {
   };
 
   useEffect(() => {
-    const serverUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-      ? 'http://localhost:5000'
-      : window.location.origin;
+    
+const serverUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'http://localhost:5000'
+  : 'https://sahaaya-backend-pz5y.onrender.com';
+
 
     const newSocket = io(serverUrl, {
       transports: ['websocket', 'polling'],
