@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = 'https://sahaaya-backend-pz5y.onrender.com/api';
 
 export async function fetchHealth() {
   const res = await fetch(`${API_BASE}/health`);
