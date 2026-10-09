@@ -132,7 +132,7 @@ export default function CitizenSOS({ onSOSTriggered }) {
           Need Help? Tell us your situation
         </h1>
         <p className="text-sm sm:text-base text-slate-600 mt-2 max-w-xl mx-auto">
-          An NSS Volunteer will receive your call digitally, contact local emergency services (112, 108, NDRF), and guide you safely until rescue arrives.
+         Submit a help request to the Sahaaya coordination system. This website does not directly contact emergency services. For a real emergency in India, call 112.
         </p>
 
         {/* 1-Click Demo Fill */}
@@ -347,7 +347,7 @@ export default function CitizenSOS({ onSOSTriggered }) {
           </button>
           <div className="flex items-center justify-center gap-1.5 text-xs text-slate-500 mt-3">
             <Shield className="w-4 h-4 text-emerald-600" />
-            <span>NSS Digital Coordinators & 112 services are on standby.</span>
+            <span>This form does not replace calling emergency services. For a real emergency in India, call 112.</span>
           </div>
         </div>
 
